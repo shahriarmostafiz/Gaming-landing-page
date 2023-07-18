@@ -5,7 +5,15 @@
   font-family: "Work Sans", sans-serif;
 }
 .primary-color {
-  color: #ff42a5;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.common-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
 }
 /* header section here  */
 
@@ -49,6 +57,56 @@
   border: 0;
 }
 /* banner section styles here  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 240px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.banner-content {
+  max-width: 720px;
+  list-style: none;
+  text-align: center;
+}
+.banner-heading {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+.banner-title {
+  font-size: 95px;
+  font-weight: 800;
+}
+.banner-list {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1rem 0;
+  text-align: left;
+  margin-left: 20px;
+}
+.banner-btn {
+  margin-top: 25px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 40px;
+  margin-right: 24px;
+  background-color: #ff42a5;
+  border: 0;
+  border-radius: 48px;
+}
+
+.banner-pic-container {
+  max-width: 720px;
+}
+.banner-img {
+  width: 100%;
+}
 
 @media screen and (max-width: 576px) {
   .nav-bar,
@@ -56,5 +114,28 @@
     flex-direction: column;
     padding: 20px;
     gap: 30px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 30px;
+  }
+  .banner-content {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .banner,
+  .nav-bar {
+    padding: 40px;
+    /* gap: 48px; */
+  }
+  .banner-btn {
+    padding: 12px 28px;
   }
 }
