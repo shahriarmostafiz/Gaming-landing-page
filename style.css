@@ -107,21 +107,119 @@
 .banner-img {
   width: 100%;
 }
+/* online videos section here  */
+.online-videos {
+  margin: 120px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 40px 240px;
+}
+.video-img {
+  /* padding: 10px; */
+  position: relative;
+}
+.vid-pic,
+caption {
+  width: 100%;
+}
+.overlay {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  background: black;
+  transition: opacity 0.5s ease-in 0.07s;
+}
+.video-img:hover .overlay {
+  border: 1px solid #ff42a5;
+  border-radius: 18px;
+  opacity: 0.8;
+  /* transform: scale(0.85); */
+}
+.video-img > p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* play section styles  */
+.play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 240px;
+  /* border: 3px solid red; */
+}
+.play-content {
+  max-width: 720px;
+}
+.play-text {
+  color: #534c64;
+  text-align: left;
+  font-size: 18px;
+  max-width: 350px;
+}
+.play-photo {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.play-big {
+  width: 100%;
+}
+.play-mini {
+  position: absolute;
+  width: 35%;
+  bottom: -60px;
+  left: -120px;
+}
 
 @media screen and (max-width: 576px) {
   .nav-bar,
-  .nav-menu {
+  .nav-menu,
+  .play {
     flex-direction: column;
     padding: 20px;
     gap: 30px;
   }
+
   .banner {
     flex-direction: column-reverse;
-    padding: 20px;
+    padding: 40px;
     gap: 30px;
   }
   .banner-content {
     text-align: center;
+  }
+  .video-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .play-photo {
+    padding: 50px;
+  }
+
+  .play-mini {
+    width: 35%;
+    bottom: 0px;
+    left: 0px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -131,11 +229,19 @@
   }
 
   .banner,
-  .nav-bar {
+  .nav-bar,
+  .play,
+  .play-photo {
     padding: 40px;
     /* gap: 48px; */
   }
-  .banner-btn {
+  .banner-btn,
+  .video-container {
     padding: 12px 28px;
+  }
+  .play-mini {
+    width: 35%;
+    bottom: 0px;
+    left: 0px;
   }
 }
