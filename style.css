@@ -76,7 +76,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 120px 0 0;
+  padding: 0 240px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -85,9 +85,6 @@
   max-width: 720px;
   list-style: none;
   text-align: center;
-  background-image: url("/images/Group 14.png");
-  /* border: 1px solid salmon; */
-  padding: 140px 240px;
 }
 .banner-heading {
   color: #0b0223;
@@ -305,8 +302,6 @@ footer {
   }
   .banner-content {
     text-align: center;
-    /* width: auto; */
-    padding: 10px;
   }
   .online-videos {
     margin: 50px 0;
@@ -360,17 +355,9 @@ footer {
   .nav-bar,
   .play,
   .play-photo,
-  .icon-section,
-  .banner-content {
+  .icon-section {
     padding: 50px;
     /* gap: 48px; */
-  }
-  .banner {
-    flex-direction: column-reverse;
-  }
-
-  .banner-content {
-    width: 100%;
   }
   .online-videos,
   .icon-section {
