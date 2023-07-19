@@ -278,7 +278,7 @@ footer {
   max-width: 400px;
   text-align: center;
 }
-
+/* mobile devices design  */
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-menu,
@@ -338,7 +338,9 @@ footer {
     gap: 2rem;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 960px) {
+
+/* tablet devices design  */
+@media screen and (min-width: 577px) and (max-width: 960px) {
   .nav-bar,
   .play {
     flex-direction: column;
