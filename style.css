@@ -224,6 +224,49 @@ caption {
   border: 1px solid #f948b2;
 }
 
+/* footer section here  */
+footer {
+  margin-top: 120px;
+  background-color: #0b0223;
+  padding: 50px 120px;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+}
+
+.footer-title {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.footer-links {
+  /* width: 50%; */
+  margin: 1rem auto;
+  color: white;
+  /* border: 1px solid wheat; */
+  cursor: pointer;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-icon > a {
+  color: White;
+  text-decoration: none;
+  font-size: 4rem;
+}
+.footer-labels {
+  color: gray;
+}
+
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-menu,
@@ -261,7 +304,8 @@ caption {
     bottom: 0px;
     left: 0px;
   }
-  .icon-section {
+  .icon-section,
+  footer {
     margin-top: 50px;
     padding: 10px;
   }
