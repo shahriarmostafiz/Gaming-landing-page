@@ -339,7 +339,8 @@ footer {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  .nav-bar {
+  .nav-bar,
+  .play {
     flex-direction: column;
     gap: 40px;
   }
@@ -359,7 +360,7 @@ footer {
     padding: 12px 20px;
   }
   .video-section {
-    padding: 12px 5px;
+    padding: 12px 8px;
   }
   .play-mini {
     width: 35%;
